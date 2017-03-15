@@ -1,5 +1,5 @@
 header {
-  background: url(../img/bg_head_3.png) no-repeat center center;
+  background: url(../img/bg_head.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -10,7 +10,7 @@ header {
     color: #FFF;
     background: #0CD2A4;
     border-color: #0CD2A4;
-}
+  }
 }
 
 .callme {
@@ -18,7 +18,7 @@ header {
     color: #FFF;
     background: #0CD2A4;
     border-color: #0CD2A4;
-}
+  }
 }
 
 .modal-header {
@@ -40,13 +40,13 @@ header {
   &:focus, &:hover {
     background: #0CD2A4;
     border-color: #0CD2A4;
-}
+  }
 }
 
 .dropdown-menu > li > a {
   &:before, &:focus, &:hover {
     background-color: #0CD2A4;
-}
+  }
 }
 
 .cd-intro {
@@ -59,7 +59,7 @@ header {
   &:focus, &:hover {
     background-color: #0CD2A4;
     border-color: #13A784;
-}
+  }
 }
 
 .title-main, .title-three, .title-rd {
@@ -86,11 +86,11 @@ header {
 .owl-theme .owl-dots .owl-dot {
   &.active span, &:hover span {
     background: #107F8E;
-}
+  }
 }
 
 .bg-skills {
-  background: url(../img/bg_head_3.png) no-repeat center center;
+  background: url(../img/bg_head.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -123,7 +123,7 @@ header {
 }
 
 .bg-work {
-  background: url(../img/bg_head_3.png) no-repeat center center;
+  background: url(../img/bg_head.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -142,14 +142,14 @@ header {
       border: 2px solid #0CD2A4;
       -webkit-transition: all .5s;
       transition: all .5s;
+    }
   }
-}
   > a:hover {
     border-color: #0CD2A4;
     color: #0CD2A4;
     -webkit-transition: all .5s;
     transition: all .5s;
-}
+  }
 }
 
 .title-wk {
@@ -161,7 +161,7 @@ header {
 }
 
 .bg-contact {
-  background: url(../img/bg_head_3.png) no-repeat center center;
+  background: url(../img/bg_head.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -175,7 +175,7 @@ header {
   &:hover {
     color: #0CD2A4;
     background-color: #FFF;
-}
+  }
 }
 
 #successmsg {
