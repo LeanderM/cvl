@@ -503,49 +503,33 @@
 	<div class="container cont-mg">
 		<!-- Nav tabs -->
 		<ul class="nav nav-tabs" role="tablist">
-			<li role="presentation" class="active"><a href="#1" role="tab" data-toggle="tab">Google</a></li>
-			<li role="presentation"><a href="#2" role="tab" data-toggle="tab">Envato</a></li>
-			<li role="presentation"><a href="#3" role="tab" data-toggle="tab">Dribbble</a></li>
-			<li role="presentation"><a href="#4" role="tab" data-toggle="tab">Github</a></li>
-			<li role="presentation"><a href="#5" role="tab" data-toggle="tab">Freelancer</a></li>
+			<li role="presentation" class="active"><a href="#1" role="tab" data-toggle="tab">Nedbase</a></li>
+			<li role="presentation"><a href="#2" role="tab" data-toggle="tab">Maxxton</a></li>
+			<li role="presentation"><a href="#3" role="tab" data-toggle="tab">HZ Lectoraat</a></li>
 		</ul>
 
 		<!-- Tab panes -->
 		<div class="tab-content">
 			<!-- Tab 1 -->
 			<div role="tabpanel" class="tab-pane fade active in" id="1">
-				<h3 class="title-wk">Front End Web Developer</h3>
-				<p class="wk-company">Google Inc.</p>
-				<p class="text-wk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. <br> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-				<p class="wk-date">2014 - 2015</p>
+				<h3 class="title-wk">Stagiair Developer</h3>
+				<p class="wk-company">Nedbase B.V.</p>
+				<p class="text-wk">Nedbase is een professioneel full-service internet bureau, met meerdere complexe webapplicaties voor klanten zoals DELTA N.V., de rijkswaterstaat en Zorgstroom. <br /> Ik heb hier onderzoek gedaan naar softwarekwaliteitsverbetering voor een applicatie met meer dan een kwart milioen regels PHP</p>
+				<p class="wk-date">2017 - huidig</p>
 			</div>
 			<!-- Tab 2 -->
 			<div role="tabpanel" class="tab-pane fade" id="2">
-				<h3 class="title-wk">Wordpress Developer</h3>
-				<p class="wk-company">Envato</p>
-				<p class="text-wk">Duis aute irure dolor in reprehenderit in voluptate velit. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-				<p class="wk-date">2014 - 2015</p>
+				<h3 class="title-wk">Stagiair Research and Development</h3>
+				<p class="wk-company">Maxxton B.V.</p>
+				<p class="text-wk">Maxxton is een premiere leverancier voor ERP paketten die gespecialiseerd zijn in de hospitality sector (vakantieparken, hotels en dergelijke) <br /> Ik heb onderzocht hoe Docker containers het best toegepast konden worden in een microservices gebaseerde architectuur</p>
+				<p class="wk-date">2015</p>
 			</div>
 			<!-- Tab 3 -->
 			<div role="tabpanel" class="tab-pane fade" id="3">
-				<h3 class="title-wk">Web Designer</h3>
-				<p class="wk-company">Dribbble</p>
-				<p class="text-wk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. <br> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-				<p class="wk-date">2012 - 2014</p>
-			</div>
-			<!-- Tab 4 -->
-			<div role="tabpanel" class="tab-pane fade" id="4">
-				<h3 class="title-wk">Software Engineer</h3>
-				<p class="wk-company">Github</p>
-				<p class="text-wk">Duis aute irure dolor in reprehenderit in voluptate velit. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-				<p class="wk-date">2010 - 2012</p>
-			</div>
-			<!-- Tab 5 -->
-			<div role="tabpanel" class="tab-pane fade" id="5">
-				<h3 class="title-wk">Freelancer (Web Designer)</h3>
-				<p class="wk-company">Freelancer</p>
-				<p class="text-wk">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. <br> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-				<p class="wk-date">2008 - 2010</p>
+				<h3 class="title-wk">HZ lectoraat</h3>
+				<p class="wk-company">Team lead en Software Engineer</p>
+				<p class="text-wk">Het lectoraat van de hogeschool zeeland onderzoekt op een practische manier manier verschillende vraagstukken op te lossen, teneinde de kennis van nederland te vergroten. <br /> Ik ben leidinggevende geweest aan een groep studenten, en heb meegeholpen met het opzetten van een groot architecturaal ontwerp.</p>
+				<p class="wk-date">2016</p>
 			</div>
 		</div>
 		<!-- // Tab panes -->
