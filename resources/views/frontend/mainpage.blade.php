@@ -639,7 +639,7 @@
 				{{!! Form::text('email', null, ["class" => "form-control ct-mail", "id" => "email", "placeholder" => "Email", "required"]); !!}}
 			</div>
 			<div class="form-group col-md-6 col-md-offset-3">
-				{{!! Form::textarea('message', null, ["class" => "form-control ct-message", "rows" => 6, "id" => "Bericht", "placeholder" => "write anything here", "required"]); !!}}
+				{{!! Form::textarea('message', null, ["class" => "form-control ct-message", "rows" => 6, "id" => "Bericht", "placeholder" => "Bericht", "required"]); !!}}
 			</div>
 		</div>
 
