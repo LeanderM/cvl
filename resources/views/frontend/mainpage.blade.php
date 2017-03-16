@@ -627,12 +627,9 @@
 	<!-- Contact Form -->
 	<article class="container cntme">
 
-        <div class="alert alert-info">
-            Dit is een test error
-        </div>
-
         @if(Session::has('message'))
-            <div class="alert alert-info" id="messageSuccess">
+            <div class="alert alert-success fade in alert-dismissable" id="messageSuccess">
+                <a href="#messageSuccess" class="close" data-dismiss="alert" aria-label="close" title="close">x</a>
                 {{Session::get('message')}}
             </div>
         @endif
