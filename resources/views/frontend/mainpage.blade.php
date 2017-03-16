@@ -75,7 +75,7 @@
 						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#work" class="menu-item wall">Werkervaring</a></li>
 						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#portfolio" class="menu-item wall">Portfolio</a></li>
 						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#download" class="menu-item wall">Sociale Netwerken</a></li>
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contacto" class="menu-item wall">Neem contact op</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contacto" class="menu-item wall">Contact</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -583,22 +583,13 @@
 		<div class="row">
 			<!-- Social Networks -->
 			<div class="col-sm-12 btn-class col-md-7">
-				<a href="#" class="social-ink">
-					<img class="socl" src="img/twitter-icon.png" alt="twitter"/>
-				</a>
-				<a href="#" class="social-ink">
-					<img class="socl" src="img/facebook-icon.png" alt="facebook"/>
-				</a>
-				<a href="#" class="social-ink">
-					<img class="socl" src="img/google-icon.png" alt="google"/>
-				</a>
-				<a href="#" class="social-ink">
+				<a href="https://www.linkedin.com/in/leander-molegraaf-81373b21" class="social-ink">
 					<img class="socl" src="img/linkedin-icon.png" alt="linkedin"/>
 				</a>
 			</div>
 			<!-- Download Resume - CV -->
 			<div class="col-sm-5 btn-class hidden-sm hidden-xs">
-				<a class="btn-dwnld" href="#">Download Resume</a>
+				<a class="btn-dwnld" href="#">Download CV</a>
 			</div>
 		</div>
 	</div>
@@ -609,18 +600,18 @@
 <section id="contacto" class="full-section-three bg-contact">
 	<div class="container">
 		<!-- Title Contact me -->
-		<h1 class="title-ct">Contact me.</h1>
+		<h1 class="title-ct">Contact.</h1>
 		<p class="separator-ct"></p>
 		<!-- Localization -->
 		<div class="row">
 			<div class="col-md-6 col-xs-12 txt-center">
 				<p class="icon-ct glyphicon glyphicon-map-marker"></p>
-				<p class="text-ct">I live in <b>Madrid</b></p>
+				<p class="text-ct">Ik woon in <b>Terneuzen</b></p>
 			</div>
 			<!--Mail -->
 			<div class="col-md-6 col-xs-12 txt-center">
 				<p class="icon-ct glyphicon glyphicon-send"></p>
-				<p class="text-ct">andrey@marin.com</p>
+				<p class="text-ct">{!! env("MAIL_USERNAME"); !!}</p>
 			</div>
 		</div>
 	</div>
@@ -642,44 +633,23 @@
 		{{!! Form::open(['action' => 'MailController', "id" => "ContactForm", "name" => "ContactForm", "class" => "validate-form"]); !!}}
 		<div class="row">
 			<div class="form-group col-md-6 col-md-offset-3">
-   				{{!! Form::text('name', null, ["class" => "form-control ct-name", "id" => "name", "placeholder" => "Your name", "required"]); !!}}
+   				{{!! Form::text('name', null, ["class" => "form-control ct-name", "id" => "name", "placeholder" => "Naam", "required"]); !!}}
 			</div>
 			<div class="form-group col-md-6 col-md-offset-3">
-				{{!! Form::text('email', null, ["class" => "form-control ct-mail", "id" => "email", "placeholder" => "email", "required"]); !!}}
+				{{!! Form::text('email', null, ["class" => "form-control ct-mail", "id" => "email", "placeholder" => "Email", "required"]); !!}}
 			</div>
 			<div class="form-group col-md-6 col-md-offset-3">
-				{{!! Form::textarea('message', null, ["class" => "form-control ct-message", "rows" => 6, "id" => "message", "placeholder" => "write anything here", "required"]); !!}}
+				{{!! Form::textarea('message', null, ["class" => "form-control ct-message", "rows" => 6, "id" => "Bericht", "placeholder" => "write anything here", "required"]); !!}}
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="form-group col-md-6 col-md-offset-3">
-				{{!! Form::submit("Send Now", ["name" => "button", "id" => "button", "class" => "btn btnc2 with-br btn-ctc"]); !!}}
+				{{!! Form::submit("Go", ["name" => "button", "id" => "button", "class" => "btn btnc2 with-br btn-ctc"]); !!}}
 			</div>
 		</div>
 		{{!! Form::close(); !!}}
 
-		{{--<form method="post" action="/envato/mywall/one/send-email.php" id="ContactForm" name="ContactForm" class="validate-form">
-			<!-- Form inputs -->
-			<div class="row">
-				<div class="form-group col-md-6 col-md-offset-3">
-					<input type="text" class="form-control ct-name" name="name" id="name" placeholder="Your name" required>
-				</div>
-				<div class="form-group col-md-6 col-md-offset-3">
-					<input type="email" class="form-control ct-mail" name="email" id="email" placeholder="Email" required>
-				</div>
-				<div class="form-group col-md-6 col-md-offset-3">
-					<textarea class="form-control ct-message" rows="6" name="message" id="message" placeholder="Write anything here..." required></textarea>
-				</div>
-			</div>
-			<!-- Button Send -->
-			<div class="row">
-				<div class="form-group col-md-6 col-md-offset-3">
-					<div id="successmsg"></div>
-					<button type="submit" name="button" id="button" class="btn btnc2 with-br btn-ctc"><span>Send Now</span></button>
-				</div>
-			</div>
-		</form>--}}
 	</article>
 	<!-- // Contact Form -->
 </section>
@@ -690,9 +660,10 @@
 	<div class="container padding-footer">
 		<div class="row">
 			<!-- Text Left -->
-			<div class="col-sm-8 foo-left">This is my personal resume and I hope you enjoyed it. See you soon. <br> Andrey Marin.</div>
+			<div class="col-sm-8 foo-left">Dit is mijn persoonlijke CV. Hopelijk vond je het leuk om te bekijken. Tot binnenkort.<br> Leander Molegraaf.</div>
 			<!-- Text Right -->
-			<div class="col-sm-4 foo-right">Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> in Madrid</div>
+            <audio src="audio/register.mp3" type="audio/mpeg" id="audio"></audio>
+            <div class="col-sm-4 foo-right"><span id="hiddenSoundPlayer" class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span></div>
 		</div>
 	</div>
 </footer>
@@ -712,7 +683,7 @@
 <script src="js/waypoints.min.js"></script>
 <!-- Portfolio gallery -->
 <script src="js/imagelightbox.min.js"></script>
-<!-- Send Email -->
-<!--<script src="js/sendemail.js"></script>-->
+<!-- play sound -->
+<script src="js/playsound.js"></script>
 </body>
 </html>
