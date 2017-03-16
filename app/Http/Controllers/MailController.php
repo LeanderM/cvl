@@ -9,6 +9,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ContactFormRequest;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\URL;
@@ -20,11 +21,11 @@ class MailController extends Controller
             ['name' => $request->get("name"), "email" => $request->get("email"), "user_message" => $request->get("message")],
             function($message){
                 $message->from("CVLeander@hosting2go.nl");
-                $message->to("leandermolegraaf@gmail.com", "Admin")->subject("Contact via website");
+                $message->to(env("MAIL_USERNAME"), "Admin")->subject("Contact via website");
             });
 
         //return \Response::view('frontend/mainpage', ['message' => "Thanks for contactin us!"]);
 
-        return Redirect::to(URL::previous() . "#contactto", ['message' => "Thanks for contactin us!"]);
+        return Redirect::to(URL::previous() . "#messageSuccess")->with(['message' => "Thanks for contacting us!"]);
     }
 }

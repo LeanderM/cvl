@@ -628,11 +628,11 @@
 	<article class="container cntme">
 
         <div class="alert alert-info">
-            uh-oh!
+            Dit is een test error
         </div>
 
         @if(Session::has('message'))
-            <div class="alert alert-info">
+            <div class="alert alert-info" id="messageSuccess">
                 {{Session::get('message')}}
             </div>
         @endif
