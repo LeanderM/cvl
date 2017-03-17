@@ -18,7 +18,7 @@ class MailController extends Controller
 {
     public function __invoke(ContactFormRequest $request){
         Mail::send('emails.mail',
-            ['name' => $request->get("name"), "email" => $request->get("email"), "user_message" => $request->get("message")],
+            ['name' => $request->get("name"), "email" => $request->get("email"), "user_message" => $request->get("message"), "language" => env("locale")],
             function($message){
                 $message->from("CVLeander@hosting2go.nl");
                 $message->to(env("MAIL_USERNAME"), "Admin")->subject("Contact via website");
@@ -26,6 +26,6 @@ class MailController extends Controller
 
         //return \Response::view('frontend/mainpage', ['message' => "Thanks for contactin us!"]);
 
-        return Redirect::to(URL::previous() . "#messageSuccess")->with(['message' => "Thanks for contacting us!"]);
+        return Redirect::to(URL::previous() . "#messageSuccess")->with(['message' => __("lang.mail_success")]);
     }
 }

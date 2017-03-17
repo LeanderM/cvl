@@ -1,3 +1,24 @@
+
+<!--
+		THE GREAT TODO LIST:
+-- Vervangen front-page image
+-- beschermen van telefoon nummer
+-- beschermen tegen email spam
+-- derde kernpunt toevoegen (of niet)
+-- 2 images aan "over mij" toevoegen
+-- eerste rij met kernpunten onder "over mij" herschrijven
+-- More about me vertalen en invullen. incl icoontjes
+-- Skills en Capaciteiten icoontjes aanpassen
+-- opleidingen: bachelor of master voor de HZ?
+-- opleidingen, onderste zin vertalen
+-- zoeken naar <br /> tags. verwijderen door !! in de blade tags te gebruiken, en 1 openings/sluitings accolade te verwijderen.
+-- portfolio images uploaden. tekst erbij?
+-- download CV knop daadwerkelijk laten werken
+
+-- at todos opzoeken en verwerken. of iig hier in zetten :)
+-- Ongebruikte assets verwijderen
+-- uploaden en testen!
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +26,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="robots" content="index, follow"/>
-	<title>Leander Molegraaf - CV </title>
+	<title>{{ __("lang.window_title") }} </title>
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Google Font Roboto -->
@@ -29,19 +50,19 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-				<h2 class="modal-title getmetelf" id="ModalCall">Neem contact op</h2>
+				<h2 class="modal-title getmetelf" id="ModalCall">{{ __("lang.chapter_contact") }}</h2>
 			</div>
 			<div class="modal-body">
 				<!-- Your phone number -->
-				<div class="myphone"><p class="greynum">+31</p> 06 18108714</div>
+				<div class="myphone"><p class="greynum">+31</p> 06 18108714</div> <!-- @todo beschermen! -->
 				<!-- Contact hours -->
 				<div class="contacthours">
-					<p class="hourcall">Contacturen</p>
+					<p class="hourcall">{{ __("lang.contact_hours_desc") }}</p>
 					<div class="rightcall">
-						<p class="dayscall">Ma - Vr</p>
-						<p class="horario">9:00 - 22:00</p>
-						<p class="dayscall">Zat - Zon</p>
-						<p class="horario">12:00 - 18:00</p>
+						<p class="dayscall">{{ __("lang.contact_hours_days_short") }}</p>
+						<p class="horario">{{ __("lang.contact_hours_times") }}</p>
+						<p class="dayscall">{{ __("lang.contact_hours_days_weekend_short") }}</p>
+						<p class="horario">{{ __("lang.contact_hours_times_weekend") }}</p>
 					</div>
 				</div>
 				<!-- // Contact hours -->
@@ -68,14 +89,14 @@
 					</a>
 					<!-- Navigation Sections -->
 					<ul class="dropdown-menu">
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#top" class="menu-item wall">Hallo!</a></li>
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#about" class="menu-item wall">Over mij</a></li>
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#skills" class="menu-item wall">Skills en Capaciteiten</a></li>
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#education" class="menu-item wall">Opleidingen</a></li>
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#work" class="menu-item wall">Werkervaring</a></li>
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#portfolio" class="menu-item wall">Portfolio</a></li>
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#download" class="menu-item wall">Sociale Netwerken</a></li>
-						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contacto" class="menu-item wall">Contact</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#top" class="menu-item wall">{{ __("lang.chapter_frontpage") }}</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#about" class="menu-item wall">{{ __("lang.chapter_about") }}</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#skills" class="menu-item wall">{{ __("lang.chapter_skillsCapacities") }}</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#education" class="menu-item wall">{{ __("lang.chapter_education") }}</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#work" class="menu-item wall">{{ __("lang.chapter_workExperience") }}</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#portfolio" class="menu-item wall">{{ __("lang.chapter_portfolio") }}</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#download" class="menu-item wall">{{ __("lang.chapter_socialNetworks") }}</a></li>
+						<li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contacto" class="menu-item wall">{{ __("lang.chapter_contact") }}</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -89,7 +110,7 @@
 				<span class="glyphicon glyphicon glyphicon-earphone call" aria-hidden="true"></span>
 			</a>
 			<!-- Button 'Hire me' -->
-			<a class="hireme button-mywall" data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contacto">Contact</a>
+			<a class="hireme button-mywall" data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contacto">{{ __("lang.chapter_contact") }}</a>
 		</div>
 		<!-- // Menu right -->
 	</div>
@@ -99,7 +120,7 @@
 	<div class="container">
 		<img class="img-circle imgsus" alt="Andrey Marin" src="img/profile.png"/>
 		<h1 class="name-boss">Leander Molegraaf</h1>
-		<h2 class="main-details">Programmeur. Innovator.</h2>
+		<h2 class="main-details">{{ __("lang.frontpage_details") }}</h2>
 		<p class="extend-details"> <!-- room for a short description @todo --></p>
 	</div>
 	<!-- // Personal Details -->
@@ -128,15 +149,13 @@
 		<div class="row">
 			<!-- Text about me -->
 			<div class="col-md-6">
-				<h2 class="title-main">Over mij.</h2>
+				<h2 class="title-main">{{ __("lang.chapter_about") }}</h2>
 				<p>
-				<p class="text-main">Al vanaf kinds af aan ben ik geïnteresseerd in computers en websites. Ik heb mijn eerste website ontwikkeld op de prille leeftijd van 8 jaar. Met 1 enkele pagina en lichtgroene tekst op een zwarte achtergrond niet echt een meesterwerk, maar sindsdien is alles er alleen maar op vooruitgegaan :).</p>
+					<p class="text-main">{{ __("lang.about_desc_p1") }}</p>
+				<p class="text-main">{!! __("lang.about_desc_p2") !!}</p>
+				<p class="text-main">{{ __("lang.about_desc_p3") }}</p>
+				<p class="text-main">{{ __("lang.about_desc_p4") }}</p>
 
-				<p class="text-main">Ik heb de afgelopen jaren met veel passie gewerkt aan een serie complexe (web)applicaties, zoals een 3D applicatie voor het bekijken van het <a href="https://en.wikipedia.org/wiki/Semantic_Web" >semantisch internet</a> in <a href="https://www.vive.com/eu/"> virtual reality</a> en een <a href="https://www.lora-alliance.org/What-Is-LoRa/Technology"> LoRaWAN</a> API voor de Delta geschreven in Laravel.</p>
-
-				<p class="text-main">Ik ben geïnteresseerd in het toepassen van nieuwe technieken; zo heb ik voor een stage gekozen waarin ik het deployment proces ontwerpte voor een grote microservice applicatie (~80 services met bijna 1000 klassen)</p>
-
-				<p class="text-main">In mijn vrije tijd houd ik me graag bezig met games, of het werken aan mijn eigen programmeer projecten. Ik heb mijn computer helemaal zelf hiervoor ontworpen, met zelf geselecteerde (en overclockte) hardware en een dual boot Windows/Arch Linux. In dat beetje tijd dat er nog over is wil ik ook wel eens een gitaar pakken om op te spelen.</p>
 				</p>
 			</div>
 			<!-- Image right about me -->
@@ -159,8 +178,8 @@
 						<!-- @TODO hardcoded width/height -->
 						<div class="col-md-4 img-myextra"><img alt="camera" class="img-myextrame" src="img/computer2.svg"></div>
 						<div class="col-md-8">
-							<h5 class="text-five">Self-certified nerd</h5>
-							<p class="text-subfive">Ensectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h5 class="text-five">{{ __("lang.about_elem1_name") }}</h5>
+							<p class="text-subfive">{{ __("lang.about_elem1_desc") }}</p>
 						</div>
 					</div>
 				</div>
@@ -169,8 +188,8 @@
 					<div class="row">
 						<div class="col-md-4 img-myextra"><img alt="quality" class="img-myextrame" src="img/w_quality.png"></div>
 						<div class="col-md-8">
-							<h5 class="text-five">Quality work</h5>
-							<p class="text-subfive">Duis aute irure dolor in reprehenderit velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							<h5 class="text-five">{{ __("lang.about_elem2_name") }}</h5>
+							<p class="text-subfive">{{ __("lang.about_elem2_desc") }}</p>
 						</div>
 					</div>
 				</div>
@@ -179,8 +198,8 @@
 					<div class="row">
 						<div class="col-md-4 img-myextra"><img alt="coffee" class="img-myextrame" src="img/heavy-metal-icon2.png"></div>
 						<div class="col-md-8">
-							<h5 class="text-five">Metalhead</h5>
-							<p class="text-subfive">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<h5 class="text-five">{{ __("lang.about_elem3_name") }}</h5>
+							<p class="text-subfive">{{ __("lang.about_elem3_desc") }}</p>
 						</div>
 					</div>
 				</div>
@@ -208,26 +227,26 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h3 class="title-three">More about me, and my life.</h3>
-				<p class="text-three">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
+				<h3 class="title-three">{{ __("lang.about_more_desc") }}</h3>
+				<p class="text-three">{{ __("lang.about_more_desc_2") }}</p>
 			</div>
 			<!-- Column 1 -->
 			<div class="col-md-4">
 				<img class="img-rd" alt="programmer" src="img/programmer.png"/>
-				<h3 class="title-rd">Programmer</h3>
-				<p class="text-rd">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<h3 class="title-rd">{{ __("lang.about_more_elem1_name") }}</h3>
+				<p class="text-rd">{{ __("lang.about_more_elem1_desc") }}</p>
 			</div>
 			<!-- Column 2 -->
 			<div class="col-md-4">
 				<img class="img-rd" alt="creative" src="img/brain.png"/>
-				<h3 class="title-rd">Creative</h3>
-				<p class="text-rd">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<h3 class="title-rd">{{ __("lang.about_more_elem2_name") }}</h3>
+				<p class="text-rd">{{ __("lang.about_more_elem2_desc") }}</p>
 			</div>
 			<!-- Column 3 -->
 			<div class="col-md-4">
 				<img class="img-rd" alt="innovator" src="img/rocket.png"/>
-				<h3 class="title-rd">Innovator</h3>
-				<p class="text-rd">Lorem ipsum dolor sit amet. Duis aute irure dolor in reprehenderit in voluptate.</p>
+				<h3 class="title-rd">{{ __("lang.about_more_elem3_name") }}</h3>
+				<p class="text-rd">{{ __("lang.about_more_elem3_desc") }}</p>
 			</div>
 		</div>
 	</div>
@@ -238,8 +257,8 @@
 <section id="skills" class="full-section-two bg-skills">
 	<div class="container">
 		<!-- Text Skills and Abilities -->
-		<h2 class="title-main mywhite">Skills &#38; Abilities.</h2>
-		<p class="text-main mywhite">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h2 class="title-main mywhite">{{ __("lang.chapter_skillsCapacities") }}</h2>
+		<p class="text-main mywhite">{{ __("lang.skills_desc") }}</p>
 
 		<div class="row">
 			<!-- Skills percent 1 -->
@@ -248,9 +267,9 @@
 					<div class="hidden-xs col-sm-2 icon-skill"><img class="img-skill" alt="html 5" src="img/html5.png"/></div>
 					<div class="col-sm-10">
 						<div class="row">
-							<div class="col-sm-12 title-skill">HTML5</div>
+							<div class="col-sm-12 title-skill">PHP</div>
 							<div class="col-sm-12 bar-skill">
-								<div class="this-skill my-green my-ninety"></div>
+								<div class="this-skill my-purple my-houndred"></div>
 							</div>
 						</div>
 					</div>
@@ -262,9 +281,9 @@
 					<div class="hidden-xs col-sm-2 icon-skill"><img class="img-skill" alt="css 3" src="img/css3.png"/></div>
 					<div class="col-sm-10">
 						<div class="row">
-							<div class="col-sm-12 title-skill">CSS3</div>
+							<div class="col-sm-12 title-skill">JS/TS</div>
 							<div class="col-sm-12 bar-skill">
-								<div class="this-skill my-blue my-houndred"></div>
+								<div class="this-skill my-blue my-seventy"></div>
 							</div>
 						</div>
 					</div>
@@ -276,9 +295,9 @@
 					<div class="hidden-xs col-sm-2 icon-skill"><img class="img-skill" alt="responsive" src="img/responsive.png"/></div>
 					<div class="col-sm-10">
 						<div class="row">
-							<div class="col-sm-12 title-skill">Responsive Design</div>
+							<div class="col-sm-12 title-skill">Laravel</div>
 							<div class="col-sm-12 bar-skill">
-								<div class="this-skill my-blue my-seventy"></div>
+								<div class="this-skill my-green my-eighty"></div>
 							</div>
 						</div>
 					</div>
@@ -290,11 +309,42 @@
 					<div class="hidden-xs col-sm-2 icon-skill"><img class="img-skill" alt="JavaScript" src="img/js.png"/></div>
 					<div class="col-sm-10">
 						<div class="row">
-							<div class="col-sm-12 title-skill">JavaScript</div>
+							<div class="col-sm-12 title-skill">Devops</div>
 							<div class="col-sm-12 bar-skill">
 								<div class="this-skill my-green my-eighty"></div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- skills section -->
+			<div class="col-md-6 separ">
+				<div class="cont-ab">
+					<h4 class="title-four color-a">{{ __("lang.skills_software") }}</h4>
+					<!-- Software Abilitie 1 -->
+					<div class="row">
+						<div class="col-xs-2"><img class="img-soft" alt="Photoshop" src="img/photo.png"/></div>
+						<div class="col-xs-5 ability">Phpstorm</div>
+						<div class="col-xs-5 advanced">{{ __("lang.skills_advanced") }}</div>
+					</div>
+					<!-- Software Abilitie 2 -->
+					<div class="row">
+						<div class="col-xs-2"><img class="img-soft" alt="office" src="img/offi.png"/></div>
+						<div class="col-xs-5 ability">Word</div>
+						<div class="col-xs-5 expert">{{ __("lang.skills_expert") }}</div>
+					</div>
+					<!-- Software Abilitie 3 -->
+					<div class="row">
+						<div class="col-xs-2"><img class="img-soft" alt="Illustrator" src="img/illu.png"/></div>
+						<div class="col-xs-5 ability">Lucidcharts</div>
+						<div class="col-xs-5 expert">{{ __("lang.skills_expert") }}</div>
+					</div>
+					<!-- Software Abilitie 4 -->
+					<div class="row">
+						<div class="col-xs-2"><img class="img-soft" alt="InDesign" src="img/inde.png"/></div>
+						<div class="col-xs-5 ability">Linux</div>
+						<div class="col-xs-5 advanced">{{ __("lang.skills_advanced") }}</div>
 					</div>
 				</div>
 			</div>
@@ -304,16 +354,16 @@
 					<div class="col-sm-2 hidden-xs icon-skill"><img class="img-skill" alt="PHP" src="img/php.png"/></div>
 					<div class="col-sm-10">
 						<div class="row">
-							<div class="col-sm-12 title-skill">PHP</div>
+							<div class="col-sm-12 title-skill">Databases</div>
 							<div class="col-sm-12 bar-skill">
-								<div class="this-skill my-green my-eighty"></div>
+								<div class="this-skill my-blue my-seventy"></div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- Skills percent 6 -->
-			<div class="col-md-6 separ">
+			{{--<div class="col-md-6 separ">
 				<div class="row">
 					<div class="hidden-xs col-sm-2 icon-skill"><img class="img-skill" alt="Wordpress" src="img/wp.png"/></div>
 					<div class="col-sm-10">
@@ -325,7 +375,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>--}}
 			<!-- // Skills percent -->
 		</div>
 	</div>
@@ -335,38 +385,10 @@
 		<div class="row">
 
 			<!-- Col 1 - Software Skills -->
-			<div class="col-md-4">
-				<div class="cont-ab">
-					<h4 class="title-four color-a">Software Skills</h4>
-					<!-- Software Abilitie 1 -->
-					<div class="row">
-						<div class="col-xs-2"><img class="img-soft" alt="Photoshop" src="img/photo.png"/></div>
-						<div class="col-xs-5 ability">Photoshop</div>
-						<div class="col-xs-5 expert">EXPERT</div>
-					</div>
-					<!-- Software Abilitie 2 -->
-					<div class="row">
-						<div class="col-xs-2"><img class="img-soft" alt="Illustrator" src="img/illus.png"/></div>
-						<div class="col-xs-5 ability">Illustrator</div>
-						<div class="col-xs-5 advanced">ADVANCED</div>
-					</div>
-					<!-- Software Abilitie 3 -->
-					<div class="row">
-						<div class="col-xs-2"><img class="img-soft" alt="Office" src="img/offi.png"/></div>
-						<div class="col-xs-5 ability">Office</div>
-						<div class="col-xs-5 expert">EXPERT</div>
-					</div>
-					<!-- Software Abilitie 4 -->
-					<div class="row">
-						<div class="col-xs-2"><img class="img-soft" alt="InDesign" src="img/inde.png"/></div>
-						<div class="col-xs-5 ability">InDesign</div>
-						<div class="col-xs-5 advanced">ADVANCED</div>
-					</div>
-				</div>
-			</div>
+			<!-- moved up the previous row
 
 			<!-- Col 2 - Awesome Services -->
-			<div class="col-md-4">
+			{{--<div class="col-md-4">
 				<div class="cont-ab">
 					<h4 class="title-four color-b">Awesome Services</h4>
 					<!-- Awesome Abilities -->
@@ -423,7 +445,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>--}}
 		</div>
 	</div>
 	<!-- // Abilities -->
@@ -434,8 +456,8 @@
 <section id="education" class="full-section">
 	<!-- Text Education -->
 	<div class="container">
-		<h2 class="title-main">Education.</h2>
-		<p class="text-main">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h2 class="title-main">{{ __("lang.chapter_education") }}</h2>
+		<p class="text-main">{{ __("lang.edu_desc") }}</p>
 	</div>
 
 	<!-- Timeline Responsive -->
@@ -448,13 +470,13 @@
 			</div>
 			<!-- Info 1 Education -->
 			<div class="cd-timeline-content">
-				<h2>Software Engineering</h2>
-				<h3>HARVARD UNIVERSITY</h3>
-				<span class="cd-date">2015 January</span>
+				<h2>{{ __("lang.edu_hz") }}</h2>
+				<h3>HOGESCHOOL ZEELAND</h3>
+				<span class="cd-date">est juni 2017</span>
 			</div>
 		</div>
 		<!-- 2 Item -->
-		<div class="cd-timeline-block">
+		{{--<div class="cd-timeline-block">
 			<!-- Circle image 64x64 -->
 			<div class="cd-timeline-img my-green">
 				<img src="img/ed2.png" alt="Science">
@@ -465,7 +487,7 @@
 				<h3>Massachusetts Institute of Technology</h3>
 				<span class="cd-date">2014 September</span>
 			</div>
-		</div>
+		</div>--}}
 		<!-- 3 Item -->
 		<div class="cd-timeline-block">
 			<!-- Circle image 64x64 -->
@@ -474,9 +496,9 @@
 			</div>
 			<!-- Info 3 Education -->
 			<div class="cd-timeline-content">
-				<h2>Bachelor Degree of Mobile and Web Design</h2>
-				<h3>OXFORD UNIVERSITY</h3>
-				<span class="cd-date">2007 May</span>
+				<h2>{{ __("lang.edu_scalda") }}</h2>
+				<h3>SCALDA</h3>
+				<span class="cd-date">juni 2013</span>
 			</div>
 		</div>
 		<!-- The Beginning of Times image -->
@@ -488,7 +510,7 @@
 		</div>
 	</article>
 	<!-- The Beginning of Times item -->
-	<p class="txt-times">The Beginning of Times</p>
+	<p class="txt-times">{{ __("lang.edu_beginning") }}</p>
 </section>
 <!-- // Education -->
 
@@ -496,8 +518,8 @@
 <section id="work" class="full-section-two bg-work">
 	<!-- Text Work Experience -->
 	<div class="container">
-		<h2 class="title-main mywhite">Work Experience.</h2>
-		<p class="text-main mywhite">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h2 class="title-main mywhite">{{ __("lang.chapter_workExperience") }}</h2>
+		<p class="text-main mywhite">{{ __("lang.we_desc") }}</p>
 	</div>
 	<!-- Work -->
 	<div class="container cont-mg">
@@ -512,23 +534,23 @@
 		<div class="tab-content">
 			<!-- Tab 1 -->
 			<div role="tabpanel" class="tab-pane fade active in" id="1">
-				<h3 class="title-wk">Stagiair Developer</h3>
+				<h3 class="title-wk">{{ __("lang.we_elem1_title") }}</h3>
 				<p class="wk-company">Nedbase B.V.</p>
-				<p class="text-wk">Nedbase is een professioneel full-service internet bureau, met meerdere complexe webapplicaties voor klanten zoals DELTA N.V., de rijkswaterstaat en Zorgstroom. <br /> Ik heb hier onderzoek gedaan naar softwarekwaliteitsverbetering voor een applicatie met meer dan een kwart milioen regels PHP</p>
-				<p class="wk-date">2017 - huidig</p>
+				<p class="text-wk">{!! __("lang.we_elem1_desc") !!}</p>
+				<p class="wk-date">2017 - {{ __("lang.we_elem1_date_current") }}</p>
 			</div>
 			<!-- Tab 2 -->
 			<div role="tabpanel" class="tab-pane fade" id="2">
-				<h3 class="title-wk">Stagiair Research and Development</h3>
+				<h3 class="title-wk">{{ __("lang.we_elem2_title") }}</h3>
 				<p class="wk-company">Maxxton B.V.</p>
-				<p class="text-wk">Maxxton is een premiere leverancier voor ERP paketten die gespecialiseerd zijn in de hospitality sector (vakantieparken, hotels en dergelijke) <br /> Ik heb onderzocht hoe Docker containers het best toegepast konden worden in een microservices gebaseerde architectuur</p>
+				<p class="text-wk">{!! __("lang.we_elem2_desc") !!}</p>
 				<p class="wk-date">2015</p>
 			</div>
 			<!-- Tab 3 -->
 			<div role="tabpanel" class="tab-pane fade" id="3">
-				<h3 class="title-wk">HZ lectoraat</h3>
-				<p class="wk-company">Team lead en Software Engineer</p>
-				<p class="text-wk">Het lectoraat van de hogeschool zeeland onderzoekt op een practische manier manier verschillende vraagstukken op te lossen, teneinde de kennis van nederland te vergroten. <br /> Ik ben leidinggevende geweest aan een groep studenten, en heb meegeholpen met het opzetten van een groot architecturaal ontwerp.</p>
+				<h3 class="title-wk">{{ __("lang.we_elem1_title") }}</h3>
+				<p class="wk-company">HZ lectoraat</p>
+				<p class="text-wk">{!! __("lang.we_elem3_desc") !!}</p>
 				<p class="wk-date">2016</p>
 			</div>
 		</div>
@@ -542,8 +564,8 @@
 <section id="portfolio" class="full-section">
 	<!-- Text Portfolio -->
 	<div class="container">
-		<h2 class="title-main">Portfolio.</h2>
-		<p class="text-main">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h2 class="title-main">{{ __("lang.chapter_portfolio") }}</h2>
+		<p class="text-main">{{ __("lang.port_desc") }}</p>
 	</div>
 
 	<!-- Gallery -->
@@ -573,7 +595,7 @@
 			</div>
 			<!-- Download Resume - CV -->
 			<div class="col-sm-5 btn-class hidden-sm hidden-xs">
-				<a class="btn-dwnld" href="#">Download CV</a>
+				<a class="btn-dwnld" href="#">{{ __("lang.port_download") }}</a>
 			</div>
 		</div>
 	</div>
@@ -584,18 +606,18 @@
 <section id="contacto" class="full-section-three bg-contact">
 	<div class="container">
 		<!-- Title Contact me -->
-		<h1 class="title-ct">Contact.</h1>
+		<h1 class="title-ct">{{ __("lang.chapter_contact") }}</h1>
 		<p class="separator-ct"></p>
 		<!-- Localization -->
 		<div class="row">
 			<div class="col-md-6 col-xs-12 txt-center">
 				<p class="icon-ct glyphicon glyphicon-map-marker"></p>
-				<p class="text-ct">Ik woon in <b>Terneuzen</b></p>
+				<p class="text-ct">{{ __("lang.contact_location") }} <b>{{ __("lang.contact_location_city") }}</b></p>
 			</div>
 			<!--Mail -->
 			<div class="col-md-6 col-xs-12 txt-center">
 				<p class="icon-ct glyphicon glyphicon-send"></p>
-				<p class="text-ct">{!! env("MAIL_USERNAME"); !!}</p>
+				<p class="text-ct">{!! env("MAIL_USERNAME") !!}</p>
 			</div>
 		</div>
 	</div>
@@ -617,19 +639,19 @@
 		{{!! Form::open(['action' => 'MailController', "id" => "ContactForm", "name" => "ContactForm", "class" => "validate-form"]); !!}}
 		<div class="row">
 			<div class="form-group col-md-6 col-md-offset-3">
-   				{{!! Form::text('name', null, ["class" => "form-control ct-name", "id" => "name", "placeholder" => "Naam", "required"]); !!}}
+   				{{!! Form::text('name', null, ["class" => "form-control ct-name", "id" => "name", "placeholder" => __("lang.contact_form_default_name"), "required"]); !!}}
 			</div>
 			<div class="form-group col-md-6 col-md-offset-3">
-				{{!! Form::text('email', null, ["class" => "form-control ct-mail", "id" => "email", "placeholder" => "Email", "required"]); !!}}
+				{{!! Form::text('email', null, ["class" => "form-control ct-mail", "id" => "email", "placeholder" => __("lang.contact_form_default_email"), "required"]); !!}}
 			</div>
 			<div class="form-group col-md-6 col-md-offset-3">
-				{{!! Form::textarea('message', null, ["class" => "form-control ct-message", "rows" => 6, "id" => "Bericht", "placeholder" => "Bericht", "required"]); !!}}
+				{{!! Form::textarea('message', null, ["class" => "form-control ct-message", "rows" => 6, "id" => "Bericht", "placeholder" => __("lang.contact_form_default_message"), "required"]); !!}}
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="form-group col-md-6 col-md-offset-3">
-				{{!! Form::submit("Go", ["name" => "button", "id" => "button", "class" => "btn btnc2 with-br btn-ctc"]); !!}}
+				{{!! Form::submit(__("lang.contact_form_submit"), ["name" => "button", "id" => "button", "class" => "btn btnc2 with-br btn-ctc"]); !!}}
 			</div>
 		</div>
 		{{!! Form::close(); !!}}
@@ -644,10 +666,10 @@
 	<div class="container padding-footer">
 		<div class="row">
 			<!-- Text Left -->
-			<div class="col-sm-8 foo-left">Dit is mijn persoonlijke CV. Hopelijk vond je het leuk om te bekijken. Tot binnenkort.<br> Leander Molegraaf.</div>
+			<div class="col-sm-8 foo-left">{!! __("lang.footer_message_1") !!}</div>
 			<!-- Text Right -->
             <audio src="audio/register.mp3" type="audio/mpeg" id="audio"></audio>
-            <div class="col-sm-4 foo-right"><span id="hiddenSoundPlayer" class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span></div>
+            <div class="col-sm-4 foo-right"><span id="hiddenSoundPlayer" class="glyphicon glyphicon-bitcoin" aria-hidden="true"> {{ __("lang.footer_message_2") }}</span></div>
 		</div>
 	</div>
 </footer>
