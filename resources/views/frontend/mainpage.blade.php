@@ -3,21 +3,14 @@
 -- Vervangen front-page image
 -- beschermen van telefoon nummer
 -- beschermen tegen email spam
--- derde kernpunt toevoegen (of niet)
--- 2 images aan "over mij" toevoegen
--- eerste rij met kernpunten onder "over mij" herschrijven
--- More about me vertalen en invullen. incl icoontjes
+-- 2 images aan "over mij" toevoegen (1/2 gedaan)
+-- Vertalingen
 -- Skills en Capaciteiten icoontjes aanpassen
--- opleidingen: bachelor of master voor de HZ?
--- opleidingen, onderste zin vertalen
 -- zoeken naar <br /> tags. verwijderen door !! in de blade tags te gebruiken, en 1 openings/sluitings accolade te verwijderen.
 -- portfolio images uploaden. tekst erbij?
--- download CV knop daadwerkelijk laten werken
--- images in submappen plaatsen. like wow.
+-- Geluid doet het niet.
 
 -- at todos opzoeken en verwerken. of iig hier in zetten :)
--- Ongebruikte assets verwijderen
--- uploaden en testen!
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -54,10 +47,10 @@
             </div>
             <div class="modal-body">
                 <!-- Your phone number -->
-                <div class="myphone"><p class="greynum">+31</p> 06 11223344</div> <!-- @todo beschermen! -->
+                <div class="myphone"><p class="greynum">+31</p> 06 18108714</div> <!-- @todo beschermen! -->
                 <!-- Contact hours -->
                 <div class="contacthours">
-                    <p class="hourcall">{{ __("lang.contact_hours_desc") }}</p>
+                    <p class="hourcall">{{ __("lang.contact_hours_desc") }} </p>
                     <div class="rightcall">
                         <p class="dayscall">{{ __("lang.contact_hours_days_short") }}</p>
                         <p class="horario">{{ __("lang.contact_hours_times") }}</p>
@@ -96,7 +89,7 @@
                         <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#work" class="menu-item wall">{{ __("lang.chapter_workExperience") }}</a></li>
                         <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#portfolio" class="menu-item wall">{{ __("lang.chapter_portfolio") }}</a></li>
                         <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#download" class="menu-item wall">{{ __("lang.chapter_socialNetworks") }}</a></li>
-                        <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contacto" class="menu-item wall">{{ __("lang.chapter_contact") }}</a></li>
+                        <li><a data-scroll data-options='{ "easing": "easeOutQuint" }' href="#contact" class="menu-item wall">{{ __("lang.chapter_contact") }}</a></li>
                     </ul>
                 </li>
             </ul>
@@ -118,7 +111,7 @@
 
     <!-- Personal Details -->
     <div class="container">
-        <img class="img-circle imgsus" alt="Andrey Marin" src="img/profile.png"/>
+        <img class="img-circle imgsus" alt="Leander Molegraaf" src="img/profile.png"/>
         <h1 class="name-boss">Leander Molegraaf</h1>
         <h2 class="main-details">{{ __("lang.frontpage_details") }}</h2>
         <p class="extend-details"> <div class="my-red"><b> Work in Progress </b></div> <!-- room for a short description @todo --></p>
@@ -129,16 +122,7 @@
 
 <!-- About Me Intro - Text Type - Hi. I'm ... -->
 <section id="about" class="cd-intro">
-    <h1 class="cd-headline letters type">
-        <!-- Static Text -->
-        <!--<span>Hi. I'm </span>
-        &lt;!&ndash; Automatic Text Type &ndash;&gt;
-        <span class="cd-words-wrapper waiting">
-            <b class="is-visible">the next Steve Jobs</b>
-            <b>incredible and amazing</b>
-            <b>better than the Flash</b>
-        </span>-->
-    </h1>
+
 </section>
 <!-- // About Me Intro -->
 
@@ -148,7 +132,7 @@
     <article class="container">
         <div class="row">
             <!-- Text about me -->
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <h2 class="title-main">{{ __("lang.chapter_about") }}</h2>
                 <p>
                 <p class="text-main">{{ __("lang.about_desc_p1") }}</p>
@@ -159,10 +143,11 @@
                 </p>
             </div>
             <!-- Image right about me -->
-            <div class="col-md-6">
+            <div class="col-md-4">
+                <br/><br />
                 <img class="img-responsive" src="img/pexels-work.jpg" alt="working">
-                <br /><br />
-                <img class="img-responsive" src="img/pexels-work.jpg" alt="working">
+                <br /><br /><br/>
+                <img class="img-responsive" src="img/teamwork.png" alt="working">
             </div>
         </div>
     </article>
@@ -196,7 +181,7 @@
                 <!-- Col 3 -->
                 <div class="col-sm-4">
                     <div class="row">
-                        <div class="col-md-4 img-myextra"><img alt="coffee" class="img-myextrame" src="img/heavy-metal-icon2.png"></div>
+                        <div class="col-md-4 img-myextra"><img alt="heavyMetal" class="img-myextrame" src="img/heavy-metal-icon2.png"></div>
                         <div class="col-md-8">
                             <h5 class="text-five">{{ __("lang.about_elem3_name") }}</h5>
                             <p class="text-subfive">{{ __("lang.about_elem3_desc") }}</p>
@@ -232,19 +217,19 @@
             </div>
             <!-- Column 1 -->
             <div class="col-md-4">
-                <img class="img-rd" alt="programmer" src="img/programmer.png"/>
+                <img class="img-rd" alt="leren" src="img/book-solid.png"/>
                 <h3 class="title-rd">{{ __("lang.about_more_elem1_name") }}</h3>
                 <p class="text-rd">{{ __("lang.about_more_elem1_desc") }}</p>
             </div>
             <!-- Column 2 -->
             <div class="col-md-4">
-                <img class="img-rd" alt="creative" src="img/brain.png"/>
+                <img class="img-rd" alt="doordenken" src="img/brain.png"/>
                 <h3 class="title-rd">{{ __("lang.about_more_elem2_name") }}</h3>
                 <p class="text-rd">{{ __("lang.about_more_elem2_desc") }}</p>
             </div>
             <!-- Column 3 -->
             <div class="col-md-4">
-                <img class="img-rd" alt="innovator" src="img/rocket.png"/>
+                <img class="img-rd" alt="vooruitgang" src="img/rocket.png"/>
                 <h3 class="title-rd">{{ __("lang.about_more_elem3_name") }}</h3>
                 <p class="text-rd">{{ __("lang.about_more_elem3_desc") }}</p>
             </div>
@@ -258,7 +243,7 @@
     <div class="container">
         <!-- Text Skills and Abilities -->
         <h2 class="title-main mywhite">{{ __("lang.chapter_skillsCapacities") }}</h2>
-        <p class="text-main mywhite">{{ __("lang.skills_desc") }}</p>
+        <p class="text-main mywhite"><i>"Skill is the unified force of experience, intellect and passion in their operation"</i> (John Ruskin, n.d.). </i><br/><br/>{{ __("lang.skills_desc") }}</p>
 
         <div class="row">
             <!-- Skills percent 1 -->
@@ -324,26 +309,26 @@
                     <h4 class="title-four color-a">{{ __("lang.skills_software") }}</h4>
                     <!-- Software Abilitie 1 -->
                     <div class="row">
-                        <div class="col-xs-2"><img class="img-soft" alt="Photoshop" src="img/photo.png"/></div>
-                        <div class="col-xs-5 ability">Phpstorm</div>
+                        <div class="col-xs-2"><img class="img-soft" alt="PhpStorm" src="img/phpStorm.png"/></div>
+                        <div class="col-xs-5 ability">PhpStorm</div>
                         <div class="col-xs-5 advanced">{{ __("lang.skills_advanced") }}</div>
                     </div>
                     <!-- Software Abilitie 2 -->
                     <div class="row">
-                        <div class="col-xs-2"><img class="img-soft" alt="office" src="img/offi.png"/></div>
+                        <div class="col-xs-2"><img class="img-soft" alt="Word" src="img/offi.png"/></div>
                         <div class="col-xs-5 ability">Word</div>
                         <div class="col-xs-5 expert">{{ __("lang.skills_expert") }}</div>
                     </div>
                     <!-- Software Abilitie 3 -->
                     <div class="row">
-                        <div class="col-xs-2"><img class="img-soft" alt="Illustrator" src="img/illu.png"/></div>
+                        <div class="col-xs-2"><img class="img-soft" alt="Lucidcharts" src="img/lucidchart.png"/></div>
                         <div class="col-xs-5 ability">Lucidcharts</div>
                         <div class="col-xs-5 expert">{{ __("lang.skills_expert") }}</div>
                     </div>
                     <!-- Software Abilitie 4 -->
                     <div class="row">
-                        <div class="col-xs-2"><img class="img-soft" alt="InDesign" src="img/inde.png"/></div>
-                        <div class="col-xs-5 ability">Linux</div>
+                        <div class="col-xs-2"><img class="img-soft" alt="GnuLinux" src="img/linux.png"/></div>
+                        <div class="col-xs-5 ability">GNU/Linux</div>
                         <div class="col-xs-5 advanced">{{ __("lang.skills_advanced") }}</div>
                     </div>
                 </div>
@@ -471,8 +456,8 @@
             <!-- Info 1 Education -->
             <div class="cd-timeline-content">
                 <h2>{{ __("lang.edu_hz") }}</h2>
-                <h3>HOGESCHOOL ZEELAND</h3>
-                <span class="cd-date">est juni 2017</span>
+                <h3>HOGESCHOOL ZEELAND (HZ)</h3>
+                <span class="cd-date"> {{ __("lang.month_july") }} 2017</span>
             </div>
         </div>
         <!-- 2 Item -->
@@ -497,8 +482,8 @@
             <!-- Info 3 Education -->
             <div class="cd-timeline-content">
                 <h2>{{ __("lang.edu_scalda") }}</h2>
-                <h3>SCALDA</h3>
-                <span class="cd-date">juni 2013</span>
+                <h3>SCALDA Terneuzen</h3>
+                <span class="cd-date">{{ __("lang.month_june") }} 2013</span>
             </div>
         </div>
         <!-- The Beginning of Times image -->
@@ -537,7 +522,7 @@
                 <h3 class="title-wk">{{ __("lang.we_elem1_title") }}</h3>
                 <p class="wk-company">Nedbase B.V.</p>
                 <p class="text-wk">{!! __("lang.we_elem1_desc") !!}</p>
-                <p class="wk-date">2017 - {{ __("lang.we_elem1_date_current") }}</p>
+                <p class="wk-date">2017</p>
             </div>
             <!-- Tab 2 -->
             <div role="tabpanel" class="tab-pane fade" id="2">
@@ -595,7 +580,7 @@
             </div>
             <!-- Download Resume - CV -->
             <div class="col-sm-5 btn-class hidden-sm hidden-xs">
-                <a class="btn-dwnld" href="#">{{ __("lang.port_download") }}</a>
+                <a class="btn-dwnld" href="download/CV.pdf">{{ __("lang.port_download") }}</a>
             </div>
         </div>
     </div>
@@ -603,7 +588,7 @@
 <!-- // Social and Download -->
 
 <!-- Contact me -->
-<section id="contacto" class="full-section-three bg-contact">
+<section id="contact" class="full-section-three bg-contact">
     <div class="container">
         <!-- Title Contact me -->
         <h1 class="title-ct">{{ __("lang.chapter_contact") }}</h1>
@@ -617,47 +602,28 @@
             <!--Mail -->
             <div class="col-md-6 col-xs-12 txt-center">
                 <p class="icon-ct glyphicon glyphicon-send"></p>
-                <p class="text-ct">{!! env("MAIL_USERNAME") !!}</p>
+                <p class="text-ct">{{ __("lang.contact_email_and_phone_1") }} <b>leandermolegraaf@gmail.com</b> {{ __("lang.contact_email_and_phone_2") }} +31 06 18108714</p>
             </div>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
     </div>
-    <!-- Contact Form -->
-    <article class="container cntme">
 
-        @if(Session::has('message'))
-            <div class="alert alert-success fade in alert-dismissable" id="messageSuccess">
-                <a href="#messageSuccess" class="close" data-dismiss="alert" aria-label="close" title="close">x</a>
-                {{Session::get('message')}}
-            </div>
-        @endif
-        <ul>
-            @foreach($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-
-        {{!! Form::open(['action' => 'MailController', "id" => "ContactForm", "name" => "ContactForm", "class" => "validate-form"]); !!}}
-        <div class="row">
-            <div class="form-group col-md-6 col-md-offset-3">
-                {{!! Form::text('name', null, ["class" => "form-control ct-name", "id" => "name", "placeholder" => __("lang.contact_form_default_name"), "required"]); !!}}
-            </div>
-            <div class="form-group col-md-6 col-md-offset-3">
-                {{!! Form::text('email', null, ["class" => "form-control ct-mail", "id" => "email", "placeholder" => __("lang.contact_form_default_email"), "required"]); !!}}
-            </div>
-            <div class="form-group col-md-6 col-md-offset-3">
-                {{!! Form::textarea('message', null, ["class" => "form-control ct-message", "rows" => 6, "id" => "Bericht", "placeholder" => __("lang.contact_form_default_message"), "required"]); !!}}
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="form-group col-md-6 col-md-offset-3">
-                {{!! Form::submit(__("lang.contact_form_submit"), ["name" => "button", "id" => "button", "class" => "btn btnc2 with-br btn-ctc"]); !!}}
-            </div>
-        </div>
-        {{!! Form::close(); !!}}
-
-    </article>
-    <!-- // Contact Form -->
 </section>
 <!-- // Contact me -->
 

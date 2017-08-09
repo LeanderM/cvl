@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::post('/mail', 'MailController');
+
+Route::get('/download/{file}', 'DownloadsController@download');
